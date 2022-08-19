@@ -5,10 +5,14 @@ module.exports = {
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
   ],
   theme: {
     extend: {},
+    colors: {
+      offwhite: "#F0F0F6",
+      primary: "#4A26DB",
+      white: "#FAFAFA",
+    },
   },
   plugins: [],
-}
+};
