@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-offwhite">
-    <div class="py-3 container mx-auto px-2">
+  <div class="bg-offwhite text-base">
+    <div class="py-3 w-full md:mx-auto md:w-[768px] px-2 lg:w-[1024px]">
       <Header />
       <slot />
     </div>

@@ -1,10 +1,10 @@
 <template>
   <header class="flex bg-white justify-between p-4 rounded-lg">
     <img src="/images/Logo.svg" alt="Chisom.Dev" />
-    <nav class="hidden sm:block">
+    <nav class="hidden md:block">
       <Menu />
     </nav>
-    <button class="sm:hidden rounded-full bg-offwhite p-3">
+    <button class="md:hidden rounded-full bg-offwhite p-3">
       <p class="sr-only">Open Menu</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
