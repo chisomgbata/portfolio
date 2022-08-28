@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-lg bg-white py-16 mt-6 px-12">
+  <div class="rounded-lg bg-white py-16  px-12">
     <section>
       <h1 class="font-bold text-2xl text-center">My Skills</h1>
       <div class="flex flex-col gap-20 mt-16">

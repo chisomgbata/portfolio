@@ -13,8 +13,8 @@ module.exports = {
       primary: "#4A26DB",
       white: "#FAFAFA",
       gray: "#767676",
+      black: "#2B2B2B",
     },
-    
   },
   plugins: [],
 };
