@@ -13,7 +13,7 @@
         <Cinput name="email" label="Email" type="email" />
         <Cinput name="subject" label="Subject" type="text" />
         <Ctextbox />
-        <button
+        <button type="submit"
           class="bg-primary rounded-lg uppercase font-semibold py-3 text-center text-white"
         >
           Send Message
