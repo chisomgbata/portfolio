@@ -9,10 +9,30 @@
     <form class="mt-10" @submit.prevent="handleSubmit">
       <h2 class="font-bold text-2xl">Send Me A Message</h2>
       <div class="bg-white rounded-lg px-3 py-6 flex flex-col gap-4 mt-14">
-        <Cinput name="name" label="Name" type="text" />
-        <Cinput name="email" label="Email" type="email" />
-        <Cinput name="subject" label="Subject" type="text" />
-        <Ctextbox />
+        <Cinput name="name" label="Name" type="text" v-model="formData.name" />
+        <Cinput
+          name="email"
+          label="Email"
+          type="email"
+          v-model="formData.email"
+        />
+        <Cinput
+          name="subject"
+          label="Subject"
+          type="text"
+          v-model="formData.subject"
+        />
+
+        <div>
+          <label for="name" class="text-gray text-lg font-medium"
+            >Message</label
+          >
+          <textarea
+            name="message"
+            class="bg-offwhite rounded-lg w-full min-h-full p-2 outline-none text-gray"
+            v-model="formData.body"
+          ></textarea>
+        </div>
         <button
           type="submit"
           class="bg-primary rounded-lg uppercase font-semibold py-3 text-center text-white"
@@ -32,12 +52,12 @@
       )
       .join("&");
   }
-  const formData = {
-    name: "Chisom",
-    email: "chisomgbata@gmail.com",
-    subject: "Test Mail To see how things works out",
-    body: "Hello from the other side, I must have seen that I have changed to tell you I am sorry for breaking your heart but when you call I am not really tell you apart anymore oahh oahhh",
-  };
+  const formData = ref({
+    name: "",
+    email: "",
+    subject: "",
+    body: "",
+  });
 
   function handleSubmit() {
     // Must post to a path not handled by the SSR.
@@ -52,7 +72,7 @@
         ...formData,
       }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Form Submitted Successfully!"))
       .catch((err) => alert(`Error: %s, ${err}`))
       .finally(() => {
         console.log("formData: %s", JSON.stringify(formData));

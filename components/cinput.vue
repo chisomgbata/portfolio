@@ -7,6 +7,10 @@
       <input
         :type="type"
         :name="name"
+        :value="modelValue"
+        @input="
+          $emit('update:modelValue', ($event.target as HTMLInputElement).value)
+        "
         class="rounded-lg bg-offwhite p-2 outline-none text-gray h-12"
       />
     </div>
@@ -18,6 +22,7 @@
     name: string;
     label: string;
     type: "text" | "email" | "password";
+    modelValue: string;
   }>();
+  defineEmits(["update:modelValue"]);
 </script>
-
