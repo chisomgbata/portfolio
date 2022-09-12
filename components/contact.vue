@@ -69,7 +69,7 @@
       },
       body: encode({
         "form-name": "contact-form",
-        ...formData,
+        ...formData.value,
       }),
     })
       .then(() => alert("Form Submitted Successfully!"))
