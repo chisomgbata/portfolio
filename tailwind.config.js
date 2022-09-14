@@ -6,6 +6,7 @@ module.exports = {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
   ],
+  darkMode: 'media',
   theme: {
     extend: {},
     colors: {
@@ -14,6 +15,7 @@ module.exports = {
       white: "#FAFAFA",
       gray: "#767676",
       black: "#2B2B2B",
+      darkBg: "#18191A", darkContent: "#242526", darkText: "#767676"
     },
   },
   plugins: [],

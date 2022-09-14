@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="w-full">
     <div class="flex gap-2 items-center">
-      <span class="bg-primary p-2 rounded-full "
+      <span class="bg-primary p-2 rounded-full"
         ><img :src="`/icons/${skill.type}.svg`" :alt="skill.type"
       /></span>
       <h2 class="text-base font-semibold">{{ skill.type }}</h2>
     </div>
-    <div class="mt-10 flex flex-col gap-10 text-sm">
+    <div class="mt-10 md:mt-16 flex flex-col gap-10 text-sm">
       <div class="flex flex-col gap-2" v-for="item in skill.skill">
         <div class="flex justify-between items-baseline">
           <span class=""

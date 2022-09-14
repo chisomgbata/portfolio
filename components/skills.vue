@@ -1,9 +1,11 @@
 <template>
-  <div class="rounded-lg bg-white py-16  px-12">
+  <div
+    class="rounded-lg bg-white dark:bg-darkContent py-16 px-12 shadow-md shadow-primary"
+  >
     <section>
       <h1 class="font-bold text-2xl text-center">My Skills</h1>
-      <div class="flex flex-col gap-20 mt-16">
-        <div v-for="skill in skills">
+      <div class="flex flex-col gap-20 mt-16 md:flex-row md:gap-16">
+        <div v-for="skill in skills" class="w-full">
           <skill :skill="skill" />
         </div>
       </div>

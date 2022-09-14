@@ -1,5 +1,7 @@
 <template>
-  <header class="flex bg-white justify-between p-4 rounded-lg">
+  <header
+    class="flex bg-white dark:bg-darkContent justify-between p-4 rounded-lg shadow-md shadow-primary"
+  >
     <img src="/images/Logo.svg" alt="Chisom.Dev" />
     <nav class="hidden md:block">
       <Menu />
