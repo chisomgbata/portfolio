@@ -46,7 +46,7 @@
           >
           <textarea
             name="message"
-            class="bg-offwhite dark:bg-darkContent rounded-lg w-full h-40 p-2 outline-none text-gray mt-2"
+            class="bg-offwhite dark:bg-darkContent w-full h-40 p-2 outline-none text-gray mt-2 border-b-2 border-primary"
             v-model="formData.body"
           ></textarea>
         </div>
