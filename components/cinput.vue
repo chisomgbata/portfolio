@@ -11,7 +11,7 @@
         @input="
           $emit('update:modelValue', ($event.target as HTMLInputElement).value)
         "
-        class="rounded-lg bg-offwhite p-2 outline-none text-gray h-12"
+        class="border-b-2 border-primary p-2 text-gray h-12 bg-darkContent outline-none"
       />
     </div>
   </div>

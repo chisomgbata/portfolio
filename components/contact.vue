@@ -1,13 +1,15 @@
 <template>
   <div
     id="contact"
-    class="bg-white dark:bg-darkBg rounded-lg px-8 py-12 shadow-md shadow-primary"
+    class="bg-white dark:bg-darkContent rounded-lg px-8 py-12 shadow-sm shadow-primary"
   >
     <form class="" @submit.prevent="handleSubmit">
-      <div class="flex w-full gap-16 items-center justify-between">
-        <h2 class="font-bold text-2xl">Send Me A Message</h2>
+      <div
+        class="flex w-full md:items-center justify-between flex-col md:flex-row md:gap-16 gap-6"
+      >
+        <h2 class="font-bold text-xl md:text-2xl">Send Me A Message</h2>
         <div
-          class="flex justify-between w-1/3 bg-offwhite p-4 rounded-lg shadow-lg"
+          class="flex justify-between w-full md:w-1/3 bg-offwhite dark:bg-darkBg p-4 rounded-lg shadow-lg"
         >
           <a href="https://github.com/chisomgbata"
             ><img src="/icons/github.svg" alt="Github"
@@ -44,7 +46,7 @@
           >
           <textarea
             name="message"
-            class="bg-offwhite rounded-lg w-full h-40 p-2 outline-none text-gray mt-2"
+            class="bg-offwhite dark:bg-darkContent rounded-lg w-full h-40 p-2 outline-none text-gray mt-2"
             v-model="formData.body"
           ></textarea>
         </div>

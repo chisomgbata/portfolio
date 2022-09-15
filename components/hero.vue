@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-6 md:mt-24 shadow-md shadow-primary">
+  <div class="mt-6 md:mt-24 shadow-sm shadow-primary">
     <section
       class="bg-white dark:bg-darkContent rounded-lg py-12 px-5 md:flex w-full md:px-16 md:py-20 md:justify-between"
     >
@@ -18,7 +18,7 @@
         <div class="flex gap-9 mt-10 items-center">
           <a
             href="#contact"
-            class="bg-primary rounded-lg py-4 px-8 text-white font-semibold shadow-md shadow-primary"
+            class="bg-primary rounded-lg py-4 px-8 text-white font-semibold shadow-sm shadow-primary"
           >
             Hire Me
           </a>

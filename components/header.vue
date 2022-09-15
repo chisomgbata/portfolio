@@ -1,12 +1,12 @@
 <template>
   <header
-    class="flex bg-white dark:bg-darkContent justify-between p-4 rounded-lg shadow-md shadow-primary"
+    class="flex bg-white dark:bg-darkContent justify-between p-4 rounded-lg shadow-sm shadow-primary"
   >
     <img src="/images/Logo.svg" alt="Chisom.Dev" />
     <nav class="hidden md:block">
       <Menu />
     </nav>
-    <button class="md:hidden rounded-full bg-offwhite p-3">
+    <button class="md:hidden rounded-full bg-offwhite dark:bg-darkBg p-3">
       <p class="sr-only">Open Menu</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"

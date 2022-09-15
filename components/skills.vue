@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded-lg bg-white dark:bg-darkContent py-16 px-12 shadow-md shadow-primary"
+    class="rounded-lg bg-white dark:bg-darkContent py-16 px-12 shadow-sm shadow-primary"
   >
     <section>
       <h1 class="font-bold text-2xl text-center">My Skills</h1>
