@@ -1,7 +1,7 @@
 <template>
   <div class="mt-6 md:mt-24 shadow-sm shadow-primary">
     <section
-      class="bg-white dark:bg-darkContent rounded-lg py-12 px-5 md:flex w-full md:px-16 md:py-20 md:justify-between"
+      class="bg-white dark:bg-darkContent rounded-lg py-12 px-5 md:flex w-full md:px-16 md:py-20 md:justify-between overflow-hidden"
     >
       <div class="flex-1">
         <h1 class="text-2xl font-bold md:text-5xl">
@@ -34,7 +34,7 @@
         <img
           src="/images/profile.png"
           alt="Chigbata Chisom"
-          class="object-cover"
+          class="object-contain"
         />
       </div>
     </section>
