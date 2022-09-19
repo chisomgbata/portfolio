@@ -23,8 +23,8 @@
             Hire Me
           </a>
           <a
-            href="/docs/chisom-chigbata-cv.pdf"
-            download="chisom-chigbata"
+            href="/docs/ChisomChigbata.pdf"
+            download="ChisomChigbata"
             class=" "
             >Download Cv</a
           >
